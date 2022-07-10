@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assets.FXMLDocumentController">
+	<children>
+		<AnchorPane layoutX="300.0" layoutY="150.0" prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+      				<AnchorPane layoutX="540.0" prefHeight="720.0" prefWidth="540.0" styleClass="login-bg" stylesheets="@design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      					<children>
+      						<ImageView fx:id="img1" fitHeight="105.0" fitWidth="112.0" layoutX="218.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+      							<image>
+      								<Image url="@../login.png" />
+      							</image>
+      						</ImageView>
+      						<Label alignment="CENTER" layoutX="176.0" layoutY="262.0" prefHeight="74.0" prefWidth="188.0" text="SIGN IN">
+      							<font>
+      								<Font name="Calibri Bold" size="50.0" />
+      							</font>
+      							<textFill>
+      								<LinearGradient endX="0.7393364928909952" endY="1.0" startX="0.23222748815165878">
+      									<stops>
+      										<Stop>
+      											<color>
+      												<Color red="0.1882352977991104" green="0.49803921580314636" blue="1.0" />
+      											</color>
+      										</Stop>
+      										<Stop offset="1.0">
+      											<color>
+      												<Color red="0.16470588743686676" green="0.8588235378265381" blue="0.7568627595901489" />
+      											</color>
+      										</Stop>
+      									</stops>
+      								</LinearGradient>
+      							</textFill>
+      						</Label>
+      						<TextField fx:id="username" layoutX="108.0" layoutY="360.0" onMouseClicked="#textfield" prefHeight="38.0" prefWidth="345.0" promptText="Username">
+      							<font>
+      								<Font name="Calibri Light Italic" size="19.0" />
+      							</font>
+      							<cursor>
+      								<Cursor fx:constant="TEXT" />
+      							</cursor>
+      						</TextField>
+      						<PasswordField fx:id="password" layoutX="108.0" layoutY="421.0" onMouseClicked="#textfield" prefHeight="38.0" prefWidth="345.0" promptText="Password">
+      							<font>
+      								<Font name="Calibri Light Italic" size="19.0" />
+      							</font>
+      							<cursor>
+      								<Cursor fx:constant="TEXT" />
+      							</cursor>
+      						</PasswordField>
+      						<Button fx:id="login_btn" layoutX="208.0" layoutY="504.0" mnemonicParsing="false" onAction="#switchToScene" prefHeight="40.0" prefWidth="130.0" styleClass="login-button" stylesheets="@design.css" text="Login" textFill="WHITE">
+      							<font>
+      								<Font name="Calibri Light" size="20.0" />
+      							</font>
+      							<cursor>
+      								<Cursor fx:constant="HAND" />
+      							</cursor>
+      						</Button>
+      						<Hyperlink fx:id="signup_btn" layoutX="204.0" layoutY="660.0" prefHeight="31.0" prefWidth="143.0" text="Create new account ?">
+      							<font>
+      								<Font size="14.0" />
+      							</font>
+      						</Hyperlink>
+                  <Button layoutX="499.0" layoutY="10.0" mnemonicParsing="false" onAction="#exit" prefHeight="24.0" prefWidth="24.0" styleClass="exit" text="X" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+      					</children>
+      				</AnchorPane>
+				<AnchorPane prefHeight="720.0" prefWidth="540.0" styleClass="login-card" stylesheets="@design.css">
+					<children>
+						<Text fx:id="hieudang" fill="WHITE" layoutX="122.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HD" textAlignment="CENTER" wrappingWidth="306.7499694824219">
+							<font>
+								<Font name="Dubai Bold" size="150.0" />
+							</font>
+						</Text>
+						<Text fx:id="resume" fill="WHITE" layoutX="181.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumé">
+							<font>
+								<Font size="52.0" />
+							</font>
+						</Text>
+					</children>
+				</AnchorPane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

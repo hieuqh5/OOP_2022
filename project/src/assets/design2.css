@@ -1,0 +1,10 @@
+
+
+.cv-bg {
+	-fx-background-color: linear-gradient(to bottom right,  #35E2F7, #07328D );
+}
+
+.cv-card {
+	-fx-background-color:#ffffff;
+	
+}
